@@ -4,15 +4,16 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-block: var(--padding-block);
   background-image: linear-gradient(to right, #00000099 30%, #00000000), 
                     image-set(
                       url("../assets/img/background-one.avif") type("image/avif"),
                       url("../assets/img/background-one.webp")
                     );
   background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.hero__content {
+  padding-block: var(--padding-block);
 }
 
 .hero__texts {
@@ -33,6 +34,14 @@
 
 
 /* SECTION PROCESSES */
+.processes {
+  background-image: linear-gradient(to right, #000000b3, #000000b3), 
+                    image-set(
+                      url("../assets/img/background-two.avif") type("image/avif"),
+                      url("../assets/img/background-two.webp")
+                    );
+}
+
 .processes__content {
   display: flex;
   flex-direction: column;
@@ -185,6 +194,11 @@
   align-items: center;
   gap: 3rem;
   padding-block: var(--padding-block);
+  background-image: image-set(
+                      url("../assets/img/background-three.avif") type("image/avif"),
+                      url("../assets/img/background-three.webp")
+                    );
+  background-size: contain;
 }
 
 .about__background img {
@@ -237,13 +251,18 @@
 
 /* SECTION PRODUCTS */
 .products {
-  padding-block: var(--padding-block);
+  background-image: linear-gradient(to right, #000000b3, #000000b3), 
+                    image-set(
+                      url("../assets/img/background-four.avif") type("image/avif"),
+                      url("../assets/img/background-four.webp")
+                    );
 }
 
 .products__content {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  padding-block: var(--padding-block);
 }
 
 .products__paragraph {

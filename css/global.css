@@ -133,13 +133,14 @@ body {
   line-height: 1;
   border: 1px solid transparent;
   border-radius: .5rem;
-  transition: box-shadow .5s;
+  transition: transform .5s, box-shadow .5s;
 
   &:hover,
   &:focus {
     --translate-icon: .5rem;
 
-    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+    transform: scale(1.025);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
 }
 
@@ -180,38 +181,10 @@ body {
   text-align: center;
 }
 
-.background__parent {
-  position: relative;
-  z-index: 10;
-}
-
-.background__parent--transparent {
-  &:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -5;
-    width: 100%;
-    height: 100%;
-    background-color: #000000b3;
-  }
-}
-
 .background {
-  position: absolute;
-  inset: 0;
-  z-index: -10;
-  user-select: none;
-  pointer-events: none;
-}
-
-.background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  user-select: none;
-  pointer-events: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (width >= 768px) {
