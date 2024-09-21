@@ -665,8 +665,8 @@
 }
 
 .info__icon svg {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .info__contact {
@@ -789,5 +789,133 @@
 @media (width >= 1010px) {
   .faqs__group {
     min-height: 21.8rem;
+  }
+}
+
+/* SECTION CONTACT */
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding-block: 1.5rem var(--padding-block);
+}
+
+.contact__texts {
+  width: 100%;
+  color: var(--color-three);
+}
+
+.contact__title--two {
+  display: none;
+}
+
+.contact__way {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.contact__icon {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.contact__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contact__name {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.contact__data {
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+}
+
+.form__group .form__input {
+  flex-basis: 15rem;
+  flex-grow: 1;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1.5rem;
+  font-weight: 500;
+  color: var(--color-three);
+  background-color: #c6c6c61f;
+  border: none;
+  border-radius: .5rem;
+
+  &::placeholder {
+    font-weight: 500;
+    color: #c6c6c6;
+  }
+}
+
+.form__input--textarea {
+  height: 12.5rem;
+  resize: none;
+}
+
+.form__btn {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: var(--color-three);
+  cursor: pointer;
+}
+
+@media (width >=1024px) {
+  .contact__content {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 4rem;
+  }
+
+  .contact__title--one {
+    display: none;
+  }
+
+  .contact__title--two {
+    display: block;
+  }
+
+  .contact__way {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .form__btn {
+    width: 50%;
   }
 }
