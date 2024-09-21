@@ -694,3 +694,100 @@
   width: 100%;
   aspect-ratio: 869/344;
 }
+
+
+/* SECTION FAQS */
+.faqs__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: var(--padding-block);
+}
+
+.faqs__group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1rem 2rem;
+  min-height: 45rem;
+}
+
+.faqs__container {
+  flex-basis: 25rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq {
+  --background: linear-gradient(to right, var(--color-three), var(--color-three));
+  --color: #2f2f2f;
+  --icon: url("../assets/icons/plus-lg.svg");
+  --scale-icon: 1;
+  --background-icon: transparent;
+
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-image: var(--background);
+  transition: bacground-image .5s;
+
+  &:hover,
+  &:focus {
+    --color: var(--color-four);
+    --scale-icon: 1.2;
+    --background-icon: var(--color-one);
+  }
+
+  &[open] {
+    --background: linear-gradient(to right, var(--color-one), var(--color-two));
+    --color: var(--color-four);
+    --icon: url("../assets/icons/dash-lg.svg");
+    --scale-icon: 1.2;
+    --background-icon: transparent;
+  }
+}
+
+.faq__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2ch;
+  min-height: 5.375rem;
+  padding: 1.5rem;
+  color: var(--color);
+  cursor: pointer;
+  transition: color .5s;
+
+  &::after {
+    content: var(--icon);
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--background-icon);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    transform: scale(var(--scale-icon));
+    transition: background-color .5s, transform .5s;
+  }
+}
+
+.faq__paragraph {
+  margin-inline: 1.5rem;
+  padding-block: 1.5rem;
+  font-weight: 500;
+  border-top: 2px solid var(--color-four);
+}
+
+@media (width >= 1010px) {
+  .faqs__group {
+    min-height: 21.8rem;
+  }
+}
