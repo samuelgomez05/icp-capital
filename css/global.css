@@ -21,6 +21,8 @@ img, picture, video, canvas, svg {
 
 input, button, textarea, select {
   font: inherit;
+  background-color: transparent;
+  border: none;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -89,14 +91,14 @@ body {
   color: transparent;
   background-image: linear-gradient(to right, var(--color-one), var(--color-two));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
 }
 
 .resalt--to-bottom {
   color: transparent;
   background-image: linear-gradient(var(--color-one), var(--color-two));
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
 }
 
 .resalt--to-right-background {
@@ -126,6 +128,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   padding: 1rem 2rem;
   font-weight: 700;

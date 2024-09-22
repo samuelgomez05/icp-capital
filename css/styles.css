@@ -4,6 +4,12 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(to right, #00000099 50%, #00000000), 
+                    -webkit-image-set(
+                      url("../assets/img/background-one.avif") type("image/avif"),
+                      url("../assets/img/background-one.webp")
+                    );
   background-image: linear-gradient(to right, #00000099 50%, #00000000), 
                     image-set(
                       url("../assets/img/background-one.avif") type("image/avif"),
@@ -41,6 +47,11 @@
 
 /* SECTION PROCESSES */
 .processes {
+  background-image: linear-gradient(to right, #000000b3, #000000b3), 
+                    -webkit-image-set(
+                      url("../assets/img/background-two.avif") type("image/avif"),
+                      url("../assets/img/background-two.webp")
+                    );
   background-image: linear-gradient(to right, #000000b3, #000000b3), 
                     image-set(
                       url("../assets/img/background-two.avif") type("image/avif"),
@@ -131,7 +142,10 @@
 
 .process__separator {
   position: absolute;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
 }
 
@@ -200,6 +214,10 @@
   align-items: center;
   gap: 3rem;
   padding-block: var(--padding-block);
+  background-image: -webkit-image-set(
+                      url("../assets/img/background-three.avif") type("image/avif"),
+                      url("../assets/img/background-three.webp")
+                    );
   background-image: image-set(
                       url("../assets/img/background-three.avif") type("image/avif"),
                       url("../assets/img/background-three.webp")
@@ -208,7 +226,8 @@
 }
 
 .about__background img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about__figure {
@@ -258,6 +277,11 @@
 /* SECTION PRODUCTS */
 .products {
   background-image: linear-gradient(to right, #000000b3, #000000b3), 
+                    -webkit-image-set(
+                      url("../assets/img/background-four.avif") type("image/avif"),
+                      url("../assets/img/background-four.webp")
+                    );
+  background-image: linear-gradient(to right, #000000b3, #000000b3), 
                     image-set(
                       url("../assets/img/background-four.avif") type("image/avif"),
                       url("../assets/img/background-four.webp")
@@ -299,7 +323,8 @@
 .product__picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 1 / 1;
 }
 
@@ -362,6 +387,11 @@
   width: 100%;
   height: 20rem;
   background-image: linear-gradient(to right, #88888854, #88888854), 
+                    -webkit-image-set(
+                      url("../assets/img/poster-video.avif") type("image/avif"),
+                      url("../assets/img/poster-video.webp")
+                    );
+  background-image: linear-gradient(to right, #88888854, #88888854), 
                     image-set(
                       url("../assets/img/poster-video.avif") type("image/avif"),
                       url("../assets/img/poster-video.webp")
@@ -376,8 +406,6 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
 
   &:hover,
@@ -532,6 +560,11 @@
 /* CONTAINER SECTIONS */
 .container-sections {
   background-image: linear-gradient(to right, #000000b3, #000000b3), 
+                    -webkit-image-set(
+                      url("../assets/img/background-five.avif") type("image/avif"),
+                      url("../assets/img/background-five.webp")
+                    );
+  background-image: linear-gradient(to right, #000000b3, #000000b3), 
                     image-set(
                       url("../assets/img/background-five.avif") type("image/avif"),
                       url("../assets/img/background-five.webp")
@@ -594,7 +627,8 @@
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimony__texts {
@@ -792,6 +826,7 @@
   }
 }
 
+
 /* SECTION CONTACT */
 .contact__content {
   display: flex;
@@ -873,8 +908,27 @@
   font-weight: 500;
   color: var(--color-three);
   background-color: #c6c6c61f;
-  border: none;
   border-radius: .5rem;
+
+  &::-webkit-input-placeholder {
+    font-weight: 500;
+    color: #c6c6c6;
+  }
+
+  &::-moz-placeholder {
+    font-weight: 500;
+    color: #c6c6c6;
+  }
+
+  &:-ms-input-placeholder {
+    font-weight: 500;
+    color: #c6c6c6;
+  }
+
+  &::-ms-input-placeholder {
+    font-weight: 500;
+    color: #c6c6c6;
+  }
 
   &::placeholder {
     font-weight: 500;
