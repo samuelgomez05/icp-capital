@@ -144,8 +144,8 @@
   position: absolute;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+          -ms-user-select: none;
+      user-select: none;
   pointer-events: none;
 }
 
@@ -910,12 +910,12 @@
   background-color: #c6c6c61f;
   border-radius: .5rem;
 
-  &::-webkit-input-placeholder {
+  &::-moz-placeholder {
     font-weight: 500;
     color: #c6c6c6;
   }
 
-  &::-moz-placeholder {
+  &::-webkit-input-placeholder {
     font-weight: 500;
     color: #c6c6c6;
   }
