@@ -4,15 +4,26 @@
   top: 0;
   z-index: 200;
   width: 100%;
-  animation: header-animation both;
+  -webkit-animation: header-animation both;
+          animation: header-animation both;
   animation-timeline: scroll();
   animation-range: 0 200px;
+}
+
+@-webkit-keyframes header-animation {
+  to {
+    background-color: #00000099;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px #00000099;
+  }
 }
 
 @keyframes header-animation {
   to {
     background-color: #00000099;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     box-shadow: 0 5px 10px #00000099;
   }
 }
@@ -58,7 +69,8 @@
   height: 100dvh;
   list-style: none;
   background-color: #000000cc;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transform: var(--translate-menu);
   transition: transform .5s;
 }
@@ -125,7 +137,8 @@
     flex-direction: row;
     height: 100%;
     background-color: transparent;
-    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
 
   .navbar__link {
