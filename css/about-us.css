@@ -215,6 +215,8 @@
 }
 
 .value__text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-inline: auto;
   margin-bottom: 1rem;
