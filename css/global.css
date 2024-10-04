@@ -75,7 +75,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin-inline: auto;
 }
 
@@ -442,7 +442,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem 1.5rem;
-  max-width: 1000px;
+  max-width: 62.5rem;
   padding: 4rem 2rem;
   color: var(--color-three);
   border-radius: 1.5rem;
@@ -507,7 +507,7 @@ body {
 
   .promo__paragraph {
     padding-inline: 1rem;
-    flex-basis: 300px;
+    flex-basis: 18.75rem;
     flex-grow: 1;
     font-size: .9rem;
     border-left: 2px solid var(--color-three);
