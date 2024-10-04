@@ -115,6 +115,26 @@
   padding: 1rem;
   border-bottom: 1px solid #808080;
 
+  &::-webkit-input-placeholder {
+    font-weight: 500;
+    color: #808080;
+  }
+
+  &::-moz-placeholder {
+    font-weight: 500;
+    color: #808080;
+  }
+
+  &:-ms-input-placeholder {
+    font-weight: 500;
+    color: #808080;
+  }
+
+  &::-ms-input-placeholder {
+    font-weight: 500;
+    color: #808080;
+  }
+
   &::placeholder {
     font-weight: 500;
     color: #808080;
@@ -177,6 +197,7 @@
     margin-top: -10rem;
   }
 }
+
 
 /* FOOTER */
 @media (width >= 1024px) {
