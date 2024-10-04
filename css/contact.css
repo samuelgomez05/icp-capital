@@ -25,7 +25,7 @@
   flex-direction: column;
   gap: 3rem;
   padding-block: var(--padding-block);
-  color: var(--color-four);
+  color: var(--color-six);
 }
 
 .contact-two__info,
@@ -181,6 +181,10 @@
     z-index: 10;
     width: 50%;
     max-width: 25rem;
+  }
+
+  .form-two__title {
+    font-size: 1.75rem;
   }
 }
 
